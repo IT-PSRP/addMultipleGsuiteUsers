@@ -57,6 +57,9 @@ Kod skryptu składa się z dwóch plików:
 plik: AddMultipleUsers
 
 ```javascript
+const googleSheetUrlToken = "xyz"; // ID arkusza kalkulacyjnego (wyciągnięta z jego URL)
+const sheetName = "doNowychKont"; //nazwa karty arkusza
+
 function addUser() {
   let ss = SpreadsheetApp.openById(googleSheetUrlToken);
   const sheet = ss.getSheetByName(sheetName);
@@ -147,9 +150,6 @@ function addUser() {
 plik: helpers
 
 ```javascript
-const NEW_USER_WELCOME_MESSAGE_SUBJECT = "Witamy w PSRP!";
-const NOTIFY_OWNER_MESSAGE_SUBJECT = "Nowi członkowie Twojej komisji!";
-
 // wygenerowanie treści wiadomości powitalnej dla użytkownika - wysłana na jego mail zapasowy
 const getWelcomeMessage = (
   newUsersName,
