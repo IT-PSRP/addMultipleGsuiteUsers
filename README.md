@@ -47,7 +47,10 @@ Arkusz, do którego kopiuje się wiersze z 'automatycznie' do tej pory nieprzetw
 
 W tym momencie się zaczyna najciekawsza część. Należy wejść na stronę: https://script.google.com, następnie utworzyć nowy projekt.
 
-Uruchomienie integracji Google Sheets + Google Admin + Google App Scripts jest wymagane do poprawnego działania. O konkretne pozwolenia zostaniemy poproszeni w momencie 1. uruchomienia skryptu.
+Uruchomienie integracji Google Sheets + Google Admin + Google App Scripts jest wymagane do poprawnego działania. Należy dodać usługi do projektu (Admin SDK oraz Gmail - identyfikator usługi powinien być jak na poniższym obrazku)
+
+![Uprawnienia](./img/permissions.png)
+O konkretne pozwolenia zostaniemy poproszeni w momencie 1. uruchomienia skryptu.
 
 Kod skryptu składa się z dwóch plików:
 
